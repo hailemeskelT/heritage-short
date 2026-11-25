@@ -17,6 +17,7 @@ This project provides a structured starting point for the AI-Content Generation:
 - Templates for design research, experiments, failures, costs, ethics, the final report, public post, and walkthrough.
 - A Google Colab setup guide for GPU work.
 - A challenge compliance checklist.
+- A local browser UI for entering a story and generating an illustrated still-based short.
 
 The required AI-generation adapters (image, video, Amharic TTS, and music) still need to be connected to the accounts/models you actually use. Their current IDs, access limits, licences, and API formats should be checked against the providers' official documentation before implementation.
 
@@ -50,6 +51,17 @@ The required AI-generation adapters (image, video, Amharic TTS, and music) still
    ```
 
 9. Run `python main.py run` to validate, plan, check assets, and assemble in one command after all assets exist.
+
+### Local Story Studio
+
+Install dependencies and run the local UI:
+
+```powershell
+python -m pip install -r requirements.txt
+python app.py
+```
+
+The browser UI accepts the source story, 10 reviewed Amharic narration lines, and 10 English subtitle lines, then runs the local asset generation and assembly pipeline. See [docs/LOCAL_UI_GUIDE.md](docs/LOCAL_UI_GUIDE.md) for privacy notes and current limitations. This fallback produces abstract illustrated cards; it does not connect an image or video-generation model.
 
 ## 3. Required media file locations
 

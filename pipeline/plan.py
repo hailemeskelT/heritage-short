@@ -5,7 +5,7 @@ from pipeline.logger import log_event
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def create_plan(storyboard):
+def create_plan(storyboard, output_path=None):
     ROOT.joinpath('outputs').mkdir(exist_ok=True)
     plan = {
         "project": storyboard['project'],
@@ -23,8 +23,15 @@ def create_plan(storyboard):
             "seed": shot.get('seed'),
             "status": shot.get('status', 'draft')
         })
-    out = ROOT / 'outputs' / 'pipeline_plan.json'
+    out = Path(output_path) if output_path else ROOT / 'outputs' / 'pipeline_plan.json'
+    if not out.is_absolute():
+        out = ROOT / out
+    out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(plan, ensure_ascii=False, indent=2), encoding='utf-8')
-    log_event('planning', 'local-pipeline', parameters={"shot_count":len(plan['shots'])}, output_path=out)
-    print(f'Plan written: {out.relative_to(ROOT)}')
+    try:
+        logged_path = out.relative_to(ROOT)
+    except ValueError:
+        logged_path = out
+    log_event('planning', 'local-pipeline', parameters={"shot_count":len(plan['shots'])}, output_path=logged_path)
+    print(f'Plan written: {logged_path}')
     return out

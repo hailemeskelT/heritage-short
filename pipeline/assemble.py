@@ -1,6 +1,6 @@
 from pathlib import Path
 import subprocess
-import shutil
+from pipeline.media import get_ffmpeg_executable
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -21,15 +21,7 @@ def _run(cmd):
 
 
 def assemble_from_stills(storyboard, allow_missing_video=True):
-    ffmpeg = shutil.which('ffmpeg')
-    if not ffmpeg:
-        try:
-            import imageio_ffmpeg
-            ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
-        except (ImportError, RuntimeError):
-            ffmpeg = None
-    if not ffmpeg:
-        raise RuntimeError('FFmpeg is not installed or not available on PATH.')
+    ffmpeg = get_ffmpeg_executable()
 
     shots = storyboard['shots']
     image_paths = [ROOT / 'outputs' / 'keyframes' / f"{s['id']}.png" for s in shots]

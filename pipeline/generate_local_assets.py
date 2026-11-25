@@ -4,8 +4,8 @@ import wave
 from pathlib import Path
 
 import edge_tts
-import imageio_ffmpeg
 from PIL import Image, ImageDraw, ImageFont
+from pipeline.media import get_ffmpeg_executable
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -74,7 +74,7 @@ def make_keyframes(storyboard):
         draw.ellipse((360, 320, 720, 680), fill=accent)
         draw.rectangle((150, 760, 930, 790), fill=dark)
         draw.text((60, 60), f"SHOT {index:02d}", fill="#fff8df", font=font(58, True))
-        draw.text((60, 110), "ILLUSTRATIVE / PLACEHOLDER", fill="#fff8df", font=font(28))
+        draw.text((60, 110), "ILLUSTRATIVE STORY CARD", fill="#fff8df", font=font(28))
         subtitle = shot["subtitle_en"]
         if subtitle.startswith("[") or "PLACEHOLDER" in subtitle.upper():
             subtitle = "Replace with a verified family story"
@@ -83,7 +83,7 @@ def make_keyframes(storyboard):
         for line in lines[:3]:
             draw.text((60, y), line, fill=dark, font=font(34, True))
             y += 48
-        draw.text((60, 990), "Illustrative scene - made with AI", fill=dark, font=font(24))
+        draw.text((60, 990), "Illustrative card - not a factual image", fill=dark, font=font(24))
         image.save(output / f"{shot['id']}.png")
 
 
@@ -99,7 +99,7 @@ async def make_narration(storyboard):
     communicate = edge_tts.Communicate(text, "am-ET-MekdesNeural")
     await communicate.save(str(mp3))
 
-    ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
+    ffmpeg = get_ffmpeg_executable()
     wav = narration_dir / "narration.wav"
     import subprocess
     subprocess.run([
@@ -152,14 +152,18 @@ def make_subtitles(storyboard):
     (ROOT / "subtitles" / "narration.en.srt").write_text("\n".join(lines), encoding="utf-8")
 
 
-def main():
-    import json
-    storyboard = json.loads((ROOT / "storyboard.json").read_text(encoding="utf-8"))
-    make_reference_sheets()
+def generate_assets(storyboard):
     make_keyframes(storyboard)
     make_score()
     make_subtitles(storyboard)
     asyncio.run(make_narration(storyboard))
+
+
+def main():
+    import json
+    storyboard = json.loads((ROOT / "storyboard.json").read_text(encoding="utf-8"))
+    make_reference_sheets()
+    generate_assets(storyboard)
     print("Generated illustrative references, keyframes, narration, score, and subtitles.")
 
 
