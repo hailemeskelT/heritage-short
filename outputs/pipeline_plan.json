@@ -1,0 +1,124 @@
+{
+  "project": {
+    "title_am": "የወረስነው ብርሃን",
+    "title_en": "The Light We Inherited",
+    "language": "am",
+    "subtitle_language": "en",
+    "target_duration_seconds": 68,
+    "frame_rate": 24,
+    "story_source": "[REAL FAMILY OR COMMUNITY STORY — COMPLETE BEFORE GENERATION]",
+    "audience": "[DEFINE INTENDED AUDIENCE]",
+    "intent": "[STATE WHAT THE AUDIENCE SHOULD FEEL OR UNDERSTAND]",
+    "ai_disclosure": "This film was made with AI."
+  },
+  "stages": [
+    "storyboard_validation",
+    "keyframes",
+    "moving_shots",
+    "music",
+    "narration",
+    "assembly"
+  ],
+  "shots": [
+    {
+      "id": "shot_01",
+      "duration_seconds": 6,
+      "keyframe_path": "outputs/keyframes/shot_01.png",
+      "video_path": "outputs/shots/shot_01.mp4",
+      "visual_prompt": "Establish the real family setting [REPLACE WITH ACTUAL PLACE]",
+      "motion_prompt": "Slow establishing pan; gentle natural movement.",
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_02",
+      "duration_seconds": 6,
+      "keyframe_path": "outputs/keyframes/shot_02.png",
+      "video_path": "outputs/shots/shot_02.mp4",
+      "visual_prompt": "Close-up of a real object connected to the family story [IDENTIFY OBJECT]",
+      "motion_prompt": "Slow push-in on the object; keep details stable.",
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_03",
+      "duration_seconds": 7,
+      "keyframe_path": "outputs/keyframes/shot_03.png",
+      "video_path": "outputs/shots/shot_03.mp4",
+      "visual_prompt": "Respectful portrait/reconstruction of the older storyteller [CHARACTER REFERENCE]",
+      "motion_prompt": "Subtle head movement; locked camera or gentle push-in.",
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_04",
+      "duration_seconds": 7,
+      "keyframe_path": "outputs/keyframes/shot_04.png",
+      "video_path": "outputs/shots/shot_04.mp4",
+      "visual_prompt": "Older and younger family members together in the actual setting [RECONSTRUCTION NOTE]",
+      "motion_prompt": "Gentle over-the-shoulder movement; one simple action.",
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_05",
+      "duration_seconds": 8,
+      "keyframe_path": "outputs/keyframes/shot_05.png",
+      "video_path": "outputs/shots/shot_05.mp4",
+      "visual_prompt": "Illustrative recreation of the real event: [FACTUAL EVENT DETAIL]",
+      "motion_prompt": "One simple action; slow camera movement.",
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_06",
+      "duration_seconds": 8,
+      "keyframe_path": "outputs/keyframes/shot_06.png",
+      "video_path": "outputs/shots/shot_06.mp4",
+      "visual_prompt": "Show the real challenge or important detail: [FACTUAL DETAIL]",
+      "motion_prompt": "Subtle motion; avoid complex actions.",
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_07",
+      "duration_seconds": 8,
+      "keyframe_path": "outputs/keyframes/shot_07.png",
+      "video_path": "outputs/shots/shot_07.mp4",
+      "visual_prompt": "Show the turning point or meaningful action: [FACTUAL TURNING POINT]",
+      "motion_prompt": "Gentle push-in or a single clear movement.",
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_08",
+      "duration_seconds": 7,
+      "keyframe_path": "outputs/keyframes/shot_08.png",
+      "video_path": "outputs/shots/shot_08.mp4",
+      "visual_prompt": "Younger family member listening and reflecting [CHARACTER REFERENCE]",
+      "motion_prompt": "Slow close-up; natural expression.",
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_09",
+      "duration_seconds": 7,
+      "keyframe_path": "outputs/keyframes/shot_09.png",
+      "video_path": "outputs/shots/shot_09.mp4",
+      "visual_prompt": "Younger generation applying or carrying forward the real family value [ACTION]",
+      "motion_prompt": "One simple positive action; gentle tracking shot.",
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_10",
+      "duration_seconds": 4,
+      "keyframe_path": "outputs/keyframes/shot_10.png",
+      "video_path": "outputs/shots/shot_10.mp4",
+      "visual_prompt": "Meaningful closing image from the real family setting; reserve safe space for end card",
+      "motion_prompt": "Slow fade or locked-off image.",
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    }
+  ]
+}

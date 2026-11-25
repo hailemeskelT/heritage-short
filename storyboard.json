@@ -1,0 +1,181 @@
+{
+  "project": {
+    "title_am": "የወረስነው ብርሃን",
+    "title_en": "The Light We Inherited",
+    "language": "am",
+    "subtitle_language": "en",
+    "target_duration_seconds": 68,
+    "frame_rate": 24,
+    "story_source": "[REAL FAMILY OR COMMUNITY STORY — COMPLETE BEFORE GENERATION]",
+    "audience": "[DEFINE INTENDED AUDIENCE]",
+    "intent": "[STATE WHAT THE AUDIENCE SHOULD FEEL OR UNDERSTAND]",
+    "ai_disclosure": "This film was made with AI."
+  },
+  "style_block": "Warm, respectful, documentary-inspired cinematic look; natural Ethiopian environment appropriate to the verified story; consistent character, clothing, lighting, and colour palette. Do not depict invented historical details as factual.",
+  "shots": [
+    {
+      "id": "shot_01",
+      "duration_seconds": 6,
+      "visual_prompt": "Establish the real family setting [REPLACE WITH ACTUAL PLACE]",
+      "motion_prompt": "Slow establishing pan; gentle natural movement.",
+      "narration_am": "አንዳንድ ታሪኮች በመጻሕፍት ውስጥ አይጻፉም።",
+      "subtitle_en": "Some stories are not written in books.",
+      "shot_reason": "Introduce the setting and tone.",
+      "reference_images": [
+        "references/character_sheet.png",
+        "references/style_reference.png"
+      ],
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_02",
+      "duration_seconds": 6,
+      "visual_prompt": "Close-up of a real object connected to the family story [IDENTIFY OBJECT]",
+      "motion_prompt": "Slow push-in on the object; keep details stable.",
+      "narration_am": "በቤታችን ውስጥ በትውልድ ይተላለፋሉ።",
+      "subtitle_en": "They are passed down through generations in our homes.",
+      "shot_reason": "Introduce a meaningful story motif.",
+      "reference_images": [
+        "references/character_sheet.png",
+        "references/style_reference.png"
+      ],
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_03",
+      "duration_seconds": 7,
+      "visual_prompt": "Respectful portrait/reconstruction of the older storyteller [CHARACTER REFERENCE]",
+      "motion_prompt": "Subtle head movement; locked camera or gentle push-in.",
+      "narration_am": "ዛሬ የማካፍላችሁ ታሪክ የ[የቤተሰብ አባል] ታሪክ ነው።",
+      "subtitle_en": "Today I am sharing the story of [FAMILY MEMBER].",
+      "shot_reason": "Introduce the storyteller.",
+      "reference_images": [
+        "references/character_sheet.png",
+        "references/style_reference.png"
+      ],
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_04",
+      "duration_seconds": 7,
+      "visual_prompt": "Older and younger family members together in the actual setting [RECONSTRUCTION NOTE]",
+      "motion_prompt": "Gentle over-the-shoulder movement; one simple action.",
+      "narration_am": "[የታሪኩን መጀመሪያ እውነታ እዚህ ያስገቡ።]",
+      "subtitle_en": "[Insert the first factual part of the story.]",
+      "shot_reason": "Establish the intergenerational relationship.",
+      "reference_images": [
+        "references/character_sheet.png",
+        "references/style_reference.png"
+      ],
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_05",
+      "duration_seconds": 8,
+      "visual_prompt": "Illustrative recreation of the real event: [FACTUAL EVENT DETAIL]",
+      "motion_prompt": "One simple action; slow camera movement.",
+      "narration_am": "[ዋናውን ክስተት በአጭሩ ያብራሩ።]",
+      "subtitle_en": "[Briefly describe the central event.]",
+      "shot_reason": "Reveal the central family experience.",
+      "reference_images": [
+        "references/character_sheet.png",
+        "references/style_reference.png"
+      ],
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_06",
+      "duration_seconds": 8,
+      "visual_prompt": "Show the real challenge or important detail: [FACTUAL DETAIL]",
+      "motion_prompt": "Subtle motion; avoid complex actions.",
+      "narration_am": "ያን ጊዜ ቀላል አልነበረም።",
+      "subtitle_en": "That time was not easy.",
+      "shot_reason": "Build emotional tension without inventing facts.",
+      "reference_images": [
+        "references/character_sheet.png",
+        "references/style_reference.png"
+      ],
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_07",
+      "duration_seconds": 8,
+      "visual_prompt": "Show the turning point or meaningful action: [FACTUAL TURNING POINT]",
+      "motion_prompt": "Gentle push-in or a single clear movement.",
+      "narration_am": "ግን [እውነተኛ ትምህርት] አስተማረን።",
+      "subtitle_en": "But it taught us [THE REAL LESSON].",
+      "shot_reason": "Express the lesson of the story.",
+      "reference_images": [
+        "references/character_sheet.png",
+        "references/style_reference.png"
+      ],
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_08",
+      "duration_seconds": 7,
+      "visual_prompt": "Younger family member listening and reflecting [CHARACTER REFERENCE]",
+      "motion_prompt": "Slow close-up; natural expression.",
+      "narration_am": "ዓመታት ያልፋሉ። ትውልዶች ይቀያየራሉ።",
+      "subtitle_en": "Years pass. Generations change.",
+      "shot_reason": "Connect the past to the present.",
+      "reference_images": [
+        "references/character_sheet.png",
+        "references/style_reference.png"
+      ],
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_09",
+      "duration_seconds": 7,
+      "visual_prompt": "Younger generation applying or carrying forward the real family value [ACTION]",
+      "motion_prompt": "One simple positive action; gentle tracking shot.",
+      "narration_am": "ግን የተማርነው ትምህርት ከእኛ ጋር ይኖራል።",
+      "subtitle_en": "But the lesson we learned lives on with us.",
+      "shot_reason": "Show continuity and inheritance.",
+      "reference_images": [
+        "references/character_sheet.png",
+        "references/style_reference.png"
+      ],
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    },
+    {
+      "id": "shot_10",
+      "duration_seconds": 4,
+      "visual_prompt": "Meaningful closing image from the real family setting; reserve safe space for end card",
+      "motion_prompt": "Slow fade or locked-off image.",
+      "narration_am": "ታሪካችን ማንነታችን ነው።",
+      "subtitle_en": "Our story is our identity.",
+      "shot_reason": "Close with the central message and AI disclosure.",
+      "reference_images": [
+        "references/character_sheet.png",
+        "references/style_reference.png"
+      ],
+      "seed": null,
+      "status": "draft_replace_with_real_story"
+    }
+  ],
+  "music": {
+    "type": "original_instrumental_score",
+    "mood": "[BASED ON THE REAL STORY]",
+    "instruments": "[SELECT APPROPRIATE INSTRUMENTS; VERIFY CULTURAL FIT]",
+    "tempo_bpm": null,
+    "duration_seconds": 68,
+    "cues": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 68,
+        "purpose": "Support the emotional arc while remaining clearly below narration."
+      }
+    ]
+  }
+}

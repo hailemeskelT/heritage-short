@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/heritage-short/storyboard.schema.json",
+  "title": "Heritage Short Storyboard",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "project",
+    "style_block",
+    "shots",
+    "music"
+  ],
+  "properties": {
+    "project": {
+      "type": "object",
+      "required": [
+        "title_am",
+        "title_en",
+        "language",
+        "subtitle_language",
+        "target_duration_seconds",
+        "frame_rate",
+        "story_source",
+        "audience",
+        "intent",
+        "ai_disclosure"
+      ],
+      "properties": {
+        "title_am": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title_en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language": {
+          "const": "am"
+        },
+        "subtitle_language": {
+          "const": "en"
+        },
+        "target_duration_seconds": {
+          "type": "integer",
+          "minimum": 60,
+          "maximum": 90
+        },
+        "frame_rate": {
+          "type": "integer",
+          "enum": [
+            24,
+            25,
+            30
+          ]
+        },
+        "story_source": {
+          "type": "string",
+          "minLength": 5
+        },
+        "audience": {
+          "type": "string",
+          "minLength": 5
+        },
+        "intent": {
+          "type": "string",
+          "minLength": 5
+        },
+        "ai_disclosure": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "style_block": {
+      "type": "string",
+      "minLength": 10
+    },
+    "shots": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "duration_seconds",
+          "visual_prompt",
+          "motion_prompt",
+          "narration_am",
+          "subtitle_en",
+          "shot_reason",
+          "reference_images",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^shot_[0-9]{2}$"
+          },
+          "duration_seconds": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "visual_prompt": {
+            "type": "string",
+            "minLength": 5
+          },
+          "motion_prompt": {
+            "type": "string",
+            "minLength": 3
+          },
+          "narration_am": {
+            "type": "string"
+          },
+          "subtitle_en": {
+            "type": "string"
+          },
+          "shot_reason": {
+            "type": "string",
+            "minLength": 3
+          },
+          "reference_images": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "seed": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "status": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "music": {
+      "type": "object",
+      "required": [
+        "type",
+        "mood",
+        "instruments",
+        "duration_seconds",
+        "cues"
+      ],
+      "properties": {
+        "type": {
+          "const": "original_instrumental_score"
+        },
+        "mood": {
+          "type": "string"
+        },
+        "instruments": {
+          "type": "string"
+        },
+        "tempo_bpm": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 300
+        },
+        "duration_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "cues": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "start_seconds",
+              "end_seconds",
+              "purpose"
+            ],
+            "properties": {
+              "start_seconds": {
+                "type": "number",
+                "minimum": 0
+              },
+              "end_seconds": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "purpose": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
