@@ -6,9 +6,9 @@
     "subtitle_language": "en",
     "target_duration_seconds": 68,
     "frame_rate": 24,
-    "story_source": "[REAL FAMILY OR COMMUNITY STORY — COMPLETE BEFORE GENERATION]",
-    "audience": "[DEFINE INTENDED AUDIENCE]",
-    "intent": "[STATE WHAT THE AUDIENCE SHOULD FEEL OR UNDERSTAND]",
+    "story_source": "REAL FAMILY OR COMMUNITY STORY",
+    "audience": "TRP2 memebr and any interested in Ethiopian heritage and family stories",
+    "intent": "the audience feel that what real family and community story looks like",
     "ai_disclosure": "This film was made with AI."
   },
   "style_block": "Warm, respectful, documentary-inspired cinematic look; natural Ethiopian environment appropriate to the verified story; consistent character, clothing, lighting, and colour palette. Do not depict invented historical details as factual.",
@@ -16,7 +16,7 @@
     {
       "id": "shot_01",
       "duration_seconds": 6,
-      "visual_prompt": "Establish the real family setting [REPLACE WITH ACTUAL PLACE]",
+      "visual_prompt": "Establish the real family setting North Showa",
       "motion_prompt": "Slow establishing pan; gentle natural movement.",
       "narration_am": "አንዳንድ ታሪኮች በመጻሕፍት ውስጥ አይጻፉም።",
       "subtitle_en": "Some stories are not written in books.",
@@ -31,7 +31,7 @@
     {
       "id": "shot_02",
       "duration_seconds": 6,
-      "visual_prompt": "Close-up of a real object connected to the family story [IDENTIFY OBJECT]",
+      "visual_prompt": "Close-up of a real object connected to the family story my fathers past story",
       "motion_prompt": "Slow push-in on the object; keep details stable.",
       "narration_am": "በቤታችን ውስጥ በትውልድ ይተላለፋሉ።",
       "subtitle_en": "They are passed down through generations in our homes.",
@@ -46,10 +46,10 @@
     {
       "id": "shot_03",
       "duration_seconds": 7,
-      "visual_prompt": "Respectful portrait/reconstruction of the older storyteller [CHARACTER REFERENCE]",
+      "visual_prompt": "Respectful portrait/reconstruction of the older storyteller natural lighting and environment",
       "motion_prompt": "Subtle head movement; locked camera or gentle push-in.",
-      "narration_am": "ዛሬ የማካፍላችሁ ታሪክ የ[የቤተሰብ አባል] ታሪክ ነው።",
-      "subtitle_en": "Today I am sharing the story of [FAMILY MEMBER].",
+      "narration_am": "ዛሬ የማካፍላችሁ ታሪክ የ አባቴን ታሪክ ነው።",
+      "subtitle_en": "Today I am sharing the story of my father.",
       "shot_reason": "Introduce the storyteller.",
       "reference_images": [
         "references/character_sheet.png",
@@ -61,10 +61,10 @@
     {
       "id": "shot_04",
       "duration_seconds": 7,
-      "visual_prompt": "Older and younger family members together in the actual setting [RECONSTRUCTION NOTE]",
+      "visual_prompt": "Older and younger family members together in the actual setting of the story natural interaction",
       "motion_prompt": "Gentle over-the-shoulder movement; one simple action.",
-      "narration_am": "[የታሪኩን መጀመሪያ እውነታ እዚህ ያስገቡ።]",
-      "subtitle_en": "[Insert the first factual part of the story.]",
+      "narration_am": "የእኛ ቤተሰብ ታሪክ በታሪካዊቷ እና በውቧ ሰሜን ሸዋ ምድር ላይ የተመሰረተ ነው።",
+      "subtitle_en": "Our families history is deeply rooted in the historic and beautiful land of North Shewa.",
       "shot_reason": "Establish the intergenerational relationship.",
       "reference_images": [
         "references/character_sheet.png",
@@ -76,10 +76,10 @@
     {
       "id": "shot_05",
       "duration_seconds": 8,
-      "visual_prompt": "Illustrative recreation of the real event: [FACTUAL EVENT DETAIL]",
+      "visual_prompt": "Illustrative recreation of the real event: my father was a great role model for the local community",
       "motion_prompt": "One simple action; slow camera movement.",
-      "narration_am": "[ዋናውን ክስተት በአጭሩ ያብራሩ።]",
-      "subtitle_en": "[Briefly describe the central event.]",
+      "narration_am": "አባቴ በግብርናም ሆነ በማህበራዊ ኑሮው ለአካባቢው ሰዎች ትልቅ አርአያ ነበር። ቤተሰባችንን በፍቅርና በስነ-ምግባር ለማሳደግ ሌት ተቀን ደክሟል። በአካባቢው ባህል መሰረት ሽምግልና እና እርቅ በማውረድ በማህበረሰቡ ዘንድ የተከበረ ሰው ነው።",
+      "subtitle_en": "My father was a great role model for the local community. He dedicated his life to nurturing our family with love and integrity. He was a respected figure in the community, promoting harmony and unity based on local culture.",
       "shot_reason": "Reveal the central family experience.",
       "reference_images": [
         "references/character_sheet.png",
@@ -91,10 +91,10 @@
     {
       "id": "shot_06",
       "duration_seconds": 8,
-      "visual_prompt": "Show the real challenge or important detail: [FACTUAL DETAIL]",
+      "visual_prompt": "Show the real challenge or important detail: ብዙ መስዋዕትነት ከፍሏል",
       "motion_prompt": "Subtle motion; avoid complex actions.",
-      "narration_am": "ያን ጊዜ ቀላል አልነበረም።",
-      "subtitle_en": "That time was not easy.",
+      "narration_am": "ያን ጊዜ ቀላል አልነበረም።ዛሬ ላይ እኛ የደረስንበት ደረጃ ሁሉ የአባቴ ድካምና ቤተሰባችን ጸሎት ውጤት ነው። የአባቴ የሕይወት ታሪክ ለእኔና ለመላው ቤተሰባችን ሁልጊዜም የኩራትና የብርታት ምንጭ ሆኖ ይኖራል።",
+      "subtitle_en": "That time was not easy. Every step we have reached today is the result of my father's hard work and our family's prayers. My father's life story will always be a source of pride and strength for me and our entire family.",
       "shot_reason": "Build emotional tension without inventing facts.",
       "reference_images": [
         "references/character_sheet.png",
@@ -106,10 +106,10 @@
     {
       "id": "shot_07",
       "duration_seconds": 8,
-      "visual_prompt": "Show the turning point or meaningful action: [FACTUAL TURNING POINT]",
+      "visual_prompt": "Show the turning point or meaningful action: Everything is the result of my father hard work",
       "motion_prompt": "Gentle push-in or a single clear movement.",
-      "narration_am": "ግን [እውነተኛ ትምህርት] አስተማረን።",
-      "subtitle_en": "But it taught us [THE REAL LESSON].",
+      "narration_am": "ግን ፈተና ተቋቁሞ በታታሪነት ሲሰራ አስተማረን።",
+      "subtitle_en": "But it taught us the value of hard work and perseverance.",
       "shot_reason": "Express the lesson of the story.",
       "reference_images": [
         "references/character_sheet.png",
@@ -121,7 +121,7 @@
     {
       "id": "shot_08",
       "duration_seconds": 7,
-      "visual_prompt": "Younger family member listening and reflecting [CHARACTER REFERENCE]",
+      "visual_prompt": "Younger family member listening and reflecting My father life story will forever remain a source of pride and strength",
       "motion_prompt": "Slow close-up; natural expression.",
       "narration_am": "ዓመታት ያልፋሉ። ትውልዶች ይቀያየራሉ።",
       "subtitle_en": "Years pass. Generations change.",
@@ -136,7 +136,7 @@
     {
       "id": "shot_09",
       "duration_seconds": 7,
-      "visual_prompt": "Younger generation applying or carrying forward the real family value [ACTION]",
+      "visual_prompt": "Younger generation applying or carrying forward the real family value pride",
       "motion_prompt": "One simple positive action; gentle tracking shot.",
       "narration_am": "ግን የተማርነው ትምህርት ከእኛ ጋር ይኖራል።",
       "subtitle_en": "But the lesson we learned lives on with us.",
@@ -166,8 +166,8 @@
   ],
   "music": {
     "type": "original_instrumental_score",
-    "mood": "[BASED ON THE REAL STORY]",
-    "instruments": "[SELECT APPROPRIATE INSTRUMENTS; VERIFY CULTURAL FIT]",
+    "mood": "BASED ON THE REAL STORY",
+    "instruments": "SELECT APPROPRIATE INSTRUMENTS; VERIFY CULTURAL FIT",
     "tempo_bpm": null,
     "duration_seconds": 68,
     "cues": [

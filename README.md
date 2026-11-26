@@ -52,6 +52,22 @@ The required AI-generation adapters (image, video, Amharic TTS, and music) still
 
 9. Run `python main.py run` to validate, plan, check assets, and assemble in one command after all assets exist.
 
+### Create a transfer archive
+
+Package the project for upload to Google Drive or Colab:
+
+```bash
+python create_transfer_zip.py
+```
+
+This creates `heritage_short_transfer.zip` in the project root. Environment files,
+virtual environments, Git metadata, caches, and Python bytecode are excluded.
+To choose another location:
+
+```bash
+python create_transfer_zip.py --project C:\path\to\heritage-short --output C:\path\to\heritage_short.zip
+```
+
 ### Local Story Studio
 
 Install dependencies and run the local UI:
